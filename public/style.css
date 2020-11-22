@@ -86,7 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -137,7 +137,7 @@ body {
   border-radius: 4px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }
-/* hover attributes */
+
 button:hover {
   opacity: 0.3;
   filter: alpha(opacity=30);
@@ -150,7 +150,7 @@ button:hover {
   height: 225px;
   width: 106px;
 }
-/* page titles */
+
 #subtitle {
   color: #2d73b6;
   font-size: 35px;
@@ -161,25 +161,16 @@ button:hover {
 
 #disclaimer {
   font-size: 10px;
-  /* text-align: center; */
 }
 
-/* #demoGIF {
-    margin: 0px 0px 0px 50px;
-}
-h5 {
-    margin: 0px 0px 0px 150px;
-} */
-/* jumbo style all pages */
 #jumbotron {
-  background: white;
+  background: 	#f8f8ff;
   font-size: 20px;
   padding: 30px;
   font-family: "Roboto", sans-serif;
   border-radius: 6px;
 }
 
-/* reszing of about me image */
 #profile_img {
   margin-right: 45px;
   margin-bottom: 45px;
@@ -189,20 +180,15 @@ h5 {
   border-radius: 5%;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
-  #profile_img {
-    margin-left: 0px;
-    margin-top: 142px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #profile_img {
     float: none;
     display: block;
     margin-left: auto;
-    margin-right: auto;  
-    max-width: 400px;
+    margin-right: auto;
+    width: 340px;
+    margin-bottom: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -237,13 +223,12 @@ h5 {
   opacity: 0.3;
   filter: alpha(opacity=30);
 }
-/* hover action */
+
 .resize:hover {
   opacity: 0.3;
   filter: alpha(opacity=30);
 }
 
-/* bottom navigation bar styling */
 .navbarbottom {
   background-color: darkgray;
   overflow: hidden;
@@ -258,13 +243,13 @@ h5 {
   font-family: "Roboto", sans-serif;
 }
 
-/* bottom navigation bar text */
+
 .bottomtext {
   color: lightgray;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
-/* form style and text */
+
 input[type="text"],
 select,
 textarea {
@@ -278,24 +263,24 @@ textarea {
   resize: vertical;
   font-family: "Roboto", sans-serif;
 }
-/* form submit button style and text */
+
 input[type="submit"] {
   background-color: #2d73b6;
-  color: white;
+  color: 	#f8f8ff;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
-/* form hover for submit button */
+
 input[type="submit"]:hover {
   background-color: lightblue;
   font-family: "Roboto", sans-serif;
 }
 #viewBtn {
   background-color: #2d73b6;
-  color: white;
+  color: 	#f8f8ff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -310,7 +295,7 @@ input[type="submit"]:hover {
 
 #sourceBtn {
   background-color: darkgray;
-  color: white;
+  color: 	#f8f8ff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -322,7 +307,7 @@ input[type="submit"]:hover {
   background-color: lightgray;
   font-family: "Roboto", sans-serif;
 }
-/* form style */
+
 #form {
   border-radius: 5px;
   background-color: gray;
@@ -402,12 +387,6 @@ p {
 #mainNav {
   border-bottom: solid;
   border-color: #2d73b6;
-}
-
-@media (min-width: 776px) and (max-width: 992px) {
-  p {
-    margin: 0px 0px 0px 80px;
-  }
 }
 
 .navbar-brand,
