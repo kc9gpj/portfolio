@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post('/send', (req, res) => {
+  console.log('hi')
   if(req.body.Subject != '') {
     console.log(
     "spam email"
@@ -48,20 +49,15 @@ app.post('/send', (req, res) => {
   `;
 
 var transporter = nodemailer.createTransport({
-  host: 'smtp.mail.yahoo.com',
-  port: 465,
-  service:'yahoo',
-  secure: false,
+  service: 'gmail',
   auth: {
-    user: 'projectemail1212@yahoo.com',
-    pass: '1111asdf'
-  },
-  debug: false,
-  logger: true
-});
+         user: 'kc9gpj12@gmail.com',
+         pass: process.env.NODEMAILER
+     }
+ });
 
 var mailOptions = {
-  from: 'projectemail1212@yahoo.com',
+  from: 'kc9gpj12@gmail.com',
   to: 'dave@dhoff.net',
   subject: 'Portfolio Message',
   text: 'New Message',
