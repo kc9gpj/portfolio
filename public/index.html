@@ -1,136 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- Bootstrap CSS -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="shortcut icon" href="/images/icon.png">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
-      <title>David Hoffmann</title>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" onclick="firstFunction()" id="title">David Hoffmann</a>
-            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item mx-0 mx-lg-1">
-                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" data-toggle="collapse" data-target="#navbarResponsive" onclick="firstFunction()">About</a>
-                  </li>
-                  <li class="nav-item mx-0 mx-lg-1">
-                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" data-toggle="collapse" data-target="#navbarResponsive" onclick="secondFunction()">Portfolio</a>
-                  </li>
-                  <li class="nav-item mx-0 mx-lg-1">
-                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" data-toggle="collapse" data-target="#navbarResponsive" onclick="thirdFunction()">Contact</a>
-                  </li>
-                  <li id="menuIcons">
-                     <a href="https://www.linkedin.com/in/david-hoffmann-24495a103/" target="_blank">
-                     <img style="-webkit-user-select: none;" src="/images/linkedin.png" width="35" height="35">
-                     </a>
-                  </li>
-                  <li id="menuIcons">
-                     <a href="https://github.com/kc9gpj" target="_blank">
-                     <img style="-webkit-user-select: none;" src="/images/github.png" width="35" height="35">
-                     </a>
-                  </li>
-               </ul>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>David Hoffmann</title>
+        <link rel="icon" type="image/x-icon" href="/images/icon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">David Hoffmann</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/images/profile.png" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
             </div>
-         </div>
-      </nav>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <embed src="resume.pdf" width="800px" margin-left= "auto" margin-right= "auto" height="1100px" style="display:none" id="resume" />
-      <!-- About me page -->
-<div class="jumbotron-fluid" id="aboutme">
-    <div class="container" id="jumbotron">
-       <h1 id="subtitle">About Me</h1>
-       <hr>
-       <div class="row" id="table">
-          <div class="col-sm-12 col-md-12-centered col-lg-5">
-             <img id="profile_img" src="/images/alt.png">
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-7">
-             <br>
-             <br>
-             <p> A lifelong experimenter, tinkerer, and world traveler. Since I was young I have enjoyed building computers, designing radio antennas, and experimenting with technology. I also enjoy camping, hunting, and a variety of nerd culture.</p>
-             <br>
-             <br>
-             <p>I grew up in the great state of Wisconsin, and I currently live near Kansas City. I graduated from Olivet Nazarene University in Illinois in 2012 with a Bachelor of Science. After that I spent 4 years in the Army as a Logistics Officer. The majority of my service was at Fort Riley, KS and southern Afghanistan.</p>
-             <br>
-             <br>
-             <p>Full Stack Development utitlizing Python and Javascript along with their associated frameworks and libraries are my main skillset. I am also competant with Devops related tasks.</p>
-          </div>
-       </div>
-       <div class="row" style="margin: auto;">
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/javascript.png" height="36" width="36"/>
-             <div class="icon_text">Javascript</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/python.png" height="36" width="36"/>
-             <div class="icon_text">Python</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/django.png" height="36" width="36"/>
-             <div class="icon_text">Django</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/node.png" height="36" width="36"/>
-             <div class="icon_text">Node.js</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/vue.png" height="36" width="36"/>
-             <div class="icon_text">Vue.js</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/react_native.png" height="36" width="36"/>
-             <div class="icon_text">React-Native</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/react.png" height="36" width="36"/>
-             <div class="icon_text">React</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/mysql.png" height="36" width="36"/>
-             <div class="icon_text">Mongo/SQL</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/ansible.png" height="36" width="36"/>
-             <div class="icon_text">Ansible</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/salesforce.png" height="36" width="36"/>
-             <div class="icon_text">Apex/SOQL</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/bootstrap.png" height="36" width="36"/>
-             <div class="icon_text">Bootstrap</div>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-12 icon_container">
-             <img class="icons" src="/images/css.png" height="36" width="36"/>
-             <div class="icon_text">CSS</div>
-          </div>
-        </div>
-    </div>
- </div>
-      <!-- portfolio page -->
-      <div class="jumbotron-fluid" id="portfolio" style="display:none">
-         <div class="container" id="jumbotron">
-            <h1 id="subtitle">Portfolio</h1>
-            <hr>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        David
+                        <span class="text-primary">Hoffmann</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Shawnee, KS 66216 · (913) 325-0616 ·
+                        <a href="mailto:dave@dhoff.net">dave@dhoff.net</a>
+                    </div>
+                    <p class="lead mb-5">I am experienced in Full Stack Development utitlizing Python and Javascript along with their associated frameworks and libraries. I also have experience with Devops related tasks and server management.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/david-hoffmann-24495a103/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/kc9gpj" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Full Stack Web Developer</h3>
+                            <div class="subheading mb-3">Legalfit</div>
+                            <p>Develop law firm websites with Django, Python, and Javascript. Co-developed a new website templating application
+                            based on Django and Vue.js. Utilize Python and Postgresql to build and maintain backend infrastructure and APIs for all products.
+                            Created extensive internal data scraping utilities with Python. Automate server deployment with Ansible. Configure additional servers for new products as needed. Integrated
+                            Ansible with a Django web-based user interface to allow all support employees the ability to run various server jobs.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2019 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Software Developer</h3>
+                            <div class="subheading mb-3">Geminid Systems</div>
+                            <p>Develop IOS and Android apps utilizing React-Native and Javascript. Integrate with Salesforce database services and
+                            user interface. Establish backend services with Apex and Python to develop APIs for mobile applications and web services. 
+                            Collaborate with a remote team of developers worldwide to provide fast and reliable products for customers.</p>                       
+                            </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2018 - March 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Coding Bootcamp</h3>
+                            <div class="subheading mb-3">University of Kansas</div>
+                            <p>Logged over 1,000+ hours of coding time. Collaborated with group members to build full stack web applications.
+                            Learned and applied full stack coding skills in Javascript, MySQL, MongoDB, HTML and CSS.
+                            Worked with various frameworks and libraries to include Node.js, React.js, Express, jQuery, and Bootstrap.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2018 - October 2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+            <div class="container" id="jumbotron">
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                <div class="modal-dialog" role="document">
@@ -152,11 +119,27 @@
                </div>
             </div>
             <ol class="row" id="table">
+                <li class="col-6">
+                  <div class="card h-100">
+                     <img class="card-img-top" src="/images/stocks.png" alt="Card image cap">
+                     <div class="card-body">
+                        <h2 class="project-text card-text text-centered">Stock Ticker Trends: Python, Django, Javascript, SQLite</h1>
+                        <span id="icons"><img src="/images/python.png" height="32" width="32"/></span>
+                        <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
+                     </div>
+                     <div class='wrapper text-center'>
+                        <div class="btn-group">
+                           <a id="viewBtn" href="https://tickertrends.xyz/" target="_blank" class="btn btn-primary">View</a>
+                           <a id="sourceBtn" href="https://github.com/kc9gpj/stock_data" target="_blank" class="btn btn-success">Source</a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
                <li class="col-6">
                   <div class="card h-100">
                      <img class="card-img-top" src="/images/marketing.png" alt="Card image cap">
                      <div class="card-body">
-                        <h1 class="card-text text-centered">Marketing Website: Python, Vue.js</h1>
+                        <h2 class="project-text card-text text-centered">Marketing Website: Python, Django, Vue.js</h1>
                         <span id="icons"><img src="/images/python.png" height="32" width="32"/></span>
                         <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
                         <span id="icons"><img src="/images/vue.png" height="32" width="32"/></span>
@@ -169,11 +152,13 @@
                      </div>
                   </div>
                </li>
+            </ol>
+            <ol class="row" id="table">
                <li class="col-6">
                   <div class="card h-100">
                      <img class="card-img-top" src="/images/demo.png" alt="Card image cap">
                      <div class="card-body">
-                        <h1 class="card-text text-centered">Sales App: React-Native/Apex/SOQL</h1>
+                        <h2 class="project-text card-text text-centered">Sales App: React-Native, Apex/SOQL</h1>
                         <span id="icons"><img src="/images/react_native.png" height="32" width="32"/></span>
                         <span id="icons"><img src="/images/salesforce.png" height="32" width="32"/></span>
                      </div>
@@ -187,13 +172,11 @@
                      </div>
                   </div>
                </li>
-            </ol>
-            <ol class="row" id="table">
                <li class="col-6">
                   <div class="card h-100" >
                      <img class="card-img-top" src="/images/daveslist.png" alt="Card image cap">
                      <div class="card-body">
-                        <h1 class="card-text text-centered">daveslist: Node.js/MySQL</h1>
+                        <h2 class="project-text card-text text-centered">daveslist: Node.js, MySQL</h1>
                         <span id="icons"><img src="/images/node.png" height="32" width="32"/></span>
                         <span id="icons"><img src="/images/mysql.png" height="32" width="32"/></span>
                         <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
@@ -206,11 +189,13 @@
                      </div>
                   </div>
                </li>
+            </ol>
+            <ol class="row" id="table">
                 <li class="col-6">
                   <div class="card h-100" >
                      <img class="card-img-top" src="/images/southpark.png" alt="Card image cap">
                      <div class="card-body">
-                        <h1 class="card-text text-centered">South Park Clicky Game: React.js</h1>
+                        <h2 class="project-text card-text text-centered">South Park Clicky Game: React.js</h1>
                         <span id="icons"><img src="/images/react.png"/></span>
                      </div>
                      <div class='wrapper text-center'>
@@ -221,47 +206,11 @@
                      </div>
                   </div>
                </li>
-            </ol>
-            <ol class="row" id="table">
-               <li class="col-6">
-                  <div class="card h-100" >
-                     <img class="card-img-top" src="/images/foodfinder.png" alt="Card image cap">
-                     <div class="card-body">
-                        <h1 class="card-text text-centered">Food Search: AJAX/jQuery/Firebase</h1>
-                        <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
-                        <span id="icons"><img src="/images/jquery.png" height="32" width="32"/></span>
-                     </div>
-                     <div class='wrapper text-center'>
-                        <div class="btn-group">
-                           <a id="viewBtn" href="https://kc9gpj.github.io/FoodSearch/" target="_blank" class="btn btn-primary">View</a>
-                           <a id="sourceBtn" href="https://github.com/kc9gpj/FoodSearch" target="_blank" class="btn btn-success">Source</a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
-               <li class="col-6">
-                  <div class="card h-100" >
-                     <img class="card-img-top" src="/images/train.png" alt="Card image cap">
-                     <div class="card-body">
-                        <h1 class="card-text text-centered">Scheduler: JS/Firebase</h1>
-                                       <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
-                                       </a>
-                     </div>
-                     <div class='wrapper text-center'>
-                        <div class="btn-group">
-                           <a id="viewBtn"  href="https://kc9gpj.github.io/TrainSchedule/" target="_blank" class="btn btn-primary">View</a>
-                           <a id="sourceBtn" href="https://github.com/kc9gpj/TrainSchedule" target="_blank" class="btn btn-success">Source</a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
-            </ol>
-            <ol class="row" id="table">
-               <li class="col-6">
+                <li class="col-6">
                   <div class="card h-100" >
                      <img class="card-img-top" src="/images/burger.jpg" alt="Card image cap">
                      <div class="card-body">
-                        <h1 class="card-text text-centered">Eat-Da-Burger: Node.js/Handlebars/MySQL</h1>
+                        <h2 class="project-text card-text text-centered">Eat-Da-Burger: Node.js, Handlebars, MySQL</h1>
                         <span id="icons"><img src="/images/node.png" height="32" width="32"/></span>
                         <span id="icons"><img src="/images/mysql.png" height="32" width="32"/></span>
                      </div>
@@ -273,136 +222,127 @@
                      </div>
                   </div>
                </li>
-               <li class="col-6">
-                  <div class="card h-100" >
-                     <img class="card-img-top" src="/images/hangman.png" alt="Card image cap">
-                     <div class="card-body">
-                        <h1 class="card-text-centered">Hangman: JS</h1>
-                        <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
-                     </div>
-                     <div class='wrapper text-center'>
-                        <div class="btn-group">
-                           <a id="viewBtn"  href="https://kc9gpj.github.io/Hangman" target="_blank" class="btn btn-primary">View</a>
-                           <a id="sourceBtn" href="https://github.com/kc9gpj/Hangman" target="_blank" class="btn btn-success">Source</a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
             </ol>
             <ol class="row" id="table">
-               <li class="col-6">
+                <li class="col-6">
                   <div class="card h-100" >
-                     <img class="card-img-top" src="/images/starwars.jpg" alt="Card image cap">
+                     <img class="card-img-top" src="/images/foodfinder.png" alt="Card image cap">
                      <div class="card-body">
-                        <h1 class="card-text text-centered">Star Wars RPG: jQuery</h1>
+                        <h2 class="project-text card-text text-centered">Food Search: AJAX, jQuery, Firebase</h1>
+                        <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
                         <span id="icons"><img src="/images/jquery.png" height="32" width="32"/></span>
                      </div>
                      <div class='wrapper text-center'>
                         <div class="btn-group">
-                           <a id="viewBtn"  href="https://kc9gpj.github.io/StarWarsRPG/" target="_blank" class="btn btn-primary">View</a>
-                           <a id="sourceBtn" href="https://github.com/kc9gpj/StarWarsRPG" target="_blank" class="btn btn-success">Source</a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
-               <li class="col-6">
-                  <div class="card h-100" >
-                     <img class="card-img-top" src="/images/trivia.jpg" alt="Card image cap">
-                     <div class="card-body">
-                        <h1 class="card-text text-centered">Trivia: JS/jQuery</h1>
-                     <span id="icons"><img src="/images/javascript.png" height="32" width="32"/></span>
-                     <span id="icons"><img src="/images/jquery.png" height="32" width="32"/></span>
-                     </div>
-                     <div class='wrapper text-center'>
-                        <div class="btn-group">
-                           <a id="viewBtn"  href="https://kc9gpj.github.io/TriviaGame/" target="_blank" class="btn btn-primary">View</a>
-                           <a id="sourceBtn" href="https://github.com/kc9gpj/TriviaGame" target="_blank" class="btn btn-success">Source</a>
+                           <a id="viewBtn" href="https://kc9gpj.github.io/FoodSearch/" target="_blank" class="btn btn-primary">View</a>
+                           <a id="sourceBtn" href="https://github.com/kc9gpj/FoodSearch" target="_blank" class="btn btn-success">Source</a>
                         </div>
                      </div>
                   </div>
                </li>
             </ol>
          </div>
+      </div>                
       </div>
-      </div>
-      <!-- contact page -->
-      <div class="jumbotron-fluid" id="contact" style="display:none">
-         <div class="container" id="jumbotron">
-            <h1 id="subtitle">Contact</h1>
-            <hr>
-            <div id="form">
-               <form method="POST" action="send">
-                  <!-- Name box -->
-                  <label for="Name">Name</label>
-                  <input type="text" name="Name">
-                  <!-- subject box -->
-                  <label id="formEmail" for="Name">Subject</label>
-                  <input id="formEmail" type="text" name="Subject">
-                  <!-- email box -->
-                  <label for="Email">Email</label>
-                  <input type="text" name="Email">
-                  <!-- text box -->
-                  <label for="subject">Message</label>
-                  <textarea type="text" name="Message"
-                     style="height:200px"></textarea>
-                  <!-- submit button -->
-                  <input type="submit" id="submit" value="Submit">
-               </form>
+            </section>
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Kansas</h3>
+                            <div class="subheading mb-3"></div>
+                            <div>Full Stack Web Developement</div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2018 - October 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Olivet Nazarene University</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Criminal Justice</div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2008 - May 2012</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-cloud"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-database"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <p>My skill set includes Javascript, jQuery, Node.js, MongoDB, SQL, Vue.js, React Native, React.js, Python, and Django. </p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>A lifelong experimenter, tinkerer, and world traveler. Since I was young I have enjoyed building computers, designing radio antennas, and experimenting with technology. I also enjoy camping, hunting, and a variety of nerd culture.</p>
+                    <p class="mb-0">I grew up in the great state of Wisconsin, and I currently live near Kansas City. I graduated from Olivet Nazarene University in Illinois in 2012 with a Bachelor of Science. After that I spent 4 years in the Army as a Logistics Officer. The majority of my service was at Fort Riley, KS and southern Afghanistan.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+                    <!-- contact-->
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Contact</h2>
+                    <h3 class="mb-0">
+                        David
+                        <span class="text-primary">Hoffmann</span>
+                    </h3>
+                    <div class="subheading mb-5">
+                        Shawnee, KS 66216 · (913) 325-0616 ·
+                        <a href="mailto:dave@dhoff.net">dave@dhoff.net</a>
+                    </div>
+            <div class="jumbotron-fluid" id="contact">
+                <div class="container" id="jumbotron">
+                    <hr>
+                    <div id="form">
+                    <form method="POST" action="send">
+                        <!-- Name box -->
+                        <label for="Name">Name</label>
+                        <input type="text" name="Name">
+                        <!-- subject box -->
+                        <label id="formEmail" for="Name">Subject</label>
+                        <input id="formEmail" type="text" name="Subject">
+                        <!-- email box -->
+                        <label for="Email">Email</label>
+                        <input type="text" name="Email">
+                        <!-- text box -->
+                        <label for="subject">Message</label>
+                        <textarea type="text" name="Message"
+                            style="height:200px"></textarea>
+                        <!-- submit button -->
+                        <input class="contact-button" type="submit" id="submit" value="Submit">
+                    </form>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <!-- bottom nav bar -->
-      <div class="navbarbottom">
-         <br>
-         <center>
-            <div class=bottomtext>Copyright 2020</div>
-         </center>
-      </div>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-      <script>
-         // menu function for about me
-         function firstFunction() {
-         document.getElementById("portfolio").style.display = "none";
-         document.getElementById("contact").style.display = "none";
-         document.getElementById("resume").style.display = "none";
-         $( "#aboutme" ).fadeIn( "slow", function() {
-             });
-         }
-         // menu function for portfolio
-         function secondFunction() {
-         document.getElementById("aboutme").style.display = "none";
-         document.getElementById("contact").style.display = "none";
-         document.getElementById("resume").style.display = "none";
-         $( "#portfolio" ).fadeIn( "slow", function() {
-             });
-         }
-         // menu function for contact
-         function thirdFunction() {
-         document.getElementById("aboutme").style.display = "none";
-         document.getElementById("portfolio").style.display = "none";
-         document.getElementById("resume").style.display = "none";
-         $( "#contact" ).fadeIn( "slow", function() {
-             });
-         }
-
-         function fourthFunction() {
-         document.getElementById("aboutme").style.display = "none";
-         document.getElementById("contact").style.display = "none";
-         document.getElementById("portfolio").style.display = "none";
-         $( "#resume" ).fadeIn( "slow", function() {
-             });
-         }
-
-         $('#submit').click(function(){
-         alert("Success! Your message has been sent.")
-         });
-      </script>
-   </body>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
